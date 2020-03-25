@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1582807934 source:c:\users\georgegege\documents\kattis solve carrots\main.c
+	<stdio.h>
+	<stdlib.h>
+

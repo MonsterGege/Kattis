@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1583861877 source:c:\users\georgegege\documents\numberfun\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
