@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1585320090 source:c:\users\georgegege\documents\belajar\main.c
+	<stdio.h>
+	<stdlib.h>
+

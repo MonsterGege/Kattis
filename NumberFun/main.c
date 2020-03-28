@@ -1,32 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
-void main()
+int num(int a,int b, int c){
+if(a+b==c)return 1;
+if(a-b==c)return 1;
+if(b-a==c)return 1;
+if(a*b==c)return 1;
+int d = a/b;
+if(d==c&&d*b==a)return 1;
+d = b/a;
+if(d==c&&d*a==b)return 1;
+return 0;
+
+}
+
+
+int main()
 {
     int n;
     scanf("%d",&n);
-    for(int i=0;i<n;i++){
-        int a,b,c;
-        scanf("%d %d %d",&a,&b,&c);
-        bool possible = false;
-        if(a + b == c){
-            possible = true;
-        }else if(a*b == c){
-            possible = true;
-        }else if(a-b == c){
-            possible = true;
-        }else if(b-a == c){
-            possible = true;
-        }else if(a%b == c && a/b==c){
-            possible = true;
-        }else if(b%a == c && b/a==c){
-            possible = true;
-        }
-        if(possible){
-            printf("Possible");
-        }else{
-            printf("Impossible");
-        }
+    while(n--){
+    int a,b,c;
+    scanf("%d %d %d",&a,&b,&c);
+    printf(num(a,b,c) ? "Possible\n" : "Impossible\n");
     }
+    return 0;
 }
